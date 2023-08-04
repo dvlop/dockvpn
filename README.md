@@ -17,6 +17,10 @@ certificate warning, since the connection is done over SSL, but we are
 using a self-signed certificate. After downloading the configuration,
 stop the `serveconfig` container. You can restart it later if you need
 to re-download the configuration, or to download it to multiple devices.
+```
+docker ps -a
+docker stop xxxxxxxxx
+```
 
 The file can be used immediately as an OpenVPN profile. It embeds all the
 required configuration and credentials. It has been tested successfully on
